@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator" class="column">
+            <h1 style="text-align: center;"> Calculadora </h1>
+            <div class="calculator-info">
+                <input type="text" id="data" disabled />
+            </div>
+            <div class="calculator-data row">
+                <div class="row" style=" width: 90%; flex-wrap: wrap;">
+                    <input type="button" class="btn-number" value="1" onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="2"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="3"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="4"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="5"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="6"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="7"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="8"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="9"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="Limpiar" onclick="lImpiar()">
+                    <input type="button" class="btn-number" value="0"onclick="pintarNumero(this.value)">
+                    <input type="button" class="btn-number" value="=" onclick="mostrarResultado()">
+                </div>
+                <div class="column" style="width: 10%; text-align: center; ">
+                    <input type="button" class="btn-operator" value="+"onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="-"onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="*"onclick="pintarOperador(this.value)">
+                    <input type="button" class="btn-operator" value="/"onclick="pintarOperador(this.value)">
+                </div>
+            </div>
+            <button class="boton">
+                <a onclick="queDiaEsHoy('dia1')">¿Que dia es hoy?</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
