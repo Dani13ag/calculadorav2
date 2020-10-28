@@ -1,4 +1,4 @@
-
+swal("Hello world!", "Welcome to my calculator","success");
 
 function pintarNumero(numero) {
    // document.getElementById('data').value=numero
@@ -38,9 +38,11 @@ y se convierte en un arreglo*/
    } else if (arreglo[1] == "*") {
       let multiplicar = parseInt(arreglo[0]) * parseInt(arreglo[2])
       document.getElementById("data").value = multiplicar
-   } else {
+   } else if (arreglo[1] == "/"){
       let dividir = parseInt(arreglo[0]) / parseInt(arreglo[2])
       document.getElementById("data").value = dividir
+   }else{
+      swal("error", "No Selecciono una operacion", "error")
    }
 
 
